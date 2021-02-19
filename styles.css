@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: local('Mulish-Light'), local('Mulish Light'),
+        url(Fonts/Mulish-Light.woff2) format('woff2'),
+        url(Fonts/Mulish-Light.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local('Mulish-Bold'), local('Mulish Bold'),
+        url(Fonts/Mulish-Bold.woff2) format('woff2'),
+        url(Fonts/Mulish-Bold.woff) format('woff');
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    background-color: #d7ecff;
+    /* Заливку сделала не по макету, чтобы лучше было видно карточки. */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-size: 36px;
+    line-height: 1.56;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
+    margin-top: 192px;
+}
+
+.title::after {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 2px;
+    background-color: #000000;
+    margin: 26px auto 33px;
+}
+
+.content-description {
+    font-size: 18px;
+    line-height: 1.67;
+    font-weight: 300;
+    color: #7D7987;
+    text-align: center;
+    width: 952px;
+    margin: 0px auto 80px;
+}
+
+.our-services-cards {
+    width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.our-services-cards li {
+    width: 350px;
+    height: 354px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+    margin-bottom: 37px;
+}
+
+.our-services-cards li:nth-last-child(-n+3) {
+    margin-bottom: 72px;
+}
+
+.our-services-cards div {
+    padding: 47px 50px 47px 38px;
+}
+
+.our-services-cards img {
+    height: 95px;
+    margin-bottom: 24px;
+}
+
+.our-services-cards h3 {
+    font-size: 24px;
+    line-height: 2.33;
+    font-weight: 700;
+    color: #000000;
+}
+
+.our-services-cards p {
+    font-size: 16px;
+    line-height: 1.75;
+    font-weight: 300;
+    color: #7D7987;
+}
+
+.button-link {
+    display: flex;
+    width: fit-content;
+    margin: 0px auto 221px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    color: #458FF6;
+    border: 1px solid #458FF6;
+    border-radius: 55px;
+    padding: 19px 51px;
+}
